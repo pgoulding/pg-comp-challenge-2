@@ -1,23 +1,53 @@
 /*---------- Body ------------------*/
 *{
-  border-top: 1px solid red
+/*  border-top: 1px solid red;*/
   box-sizing: border-box;
 }
 
 body{
-
+  font-family: verdana;
+  height: 100vh;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 200px 2fr 200px;
+/*  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
 }
 
+a{
+  text-decoration: none;
+  font-family: verdana;
+}
+.fas{
+  padding-left: 3px;
+}
+h3{
+  font-size: .8em;
+  color: dimgray;
+}
+hr{
+  border-color: darkslategray;
+}
 /*---------- Header ----------------*/
 header{
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.hamburger-menu{
-
+.fa-user-plus,
+.fa-calendar-alt,
+.fa-th,
+.fa-bars{
+  font-size: 1.8em;
+  color: grey;
+  padding: 10px;
 }
 
 .search-bar{
+  height: 40px;
+  flex-grow: 3;
+  margin-top: 5px;
 
 }
 
@@ -35,29 +65,94 @@ article{
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
-
-/*---------- Aside -----------------*/
-aside{
+/*---------- Section ---------------*/
+.social-share{
+  display: flex;
+  height: 40px;
+  width: 180px;
+  justify-content: space-between;
+  align-items: baseline;
 
 }
 
-.round-img{
+.fb-button{
 
+}
+
+.twitter-button{
+
+}
+
+.linkedin-button{
+
+}
+
+/*---------- Aside -----------------*/
+aside{
+  background-color: rgb(40, 48, 64);
+  color: lightgrey;
+  padding: 15px;
+}
+
+.round-img{
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.user-name{
+  text-align: center;
 }
 
 .sidebar-menu-categories{
 
 }
+.normalize-fa,
+.sidebar-menu-links a{
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: lightgrey;
+  line-height: 145%;
+  padding-bottom: 5px;
+  border-left: 2px solid transparent;
+  font-size: 1em;
+  padding-left: 0;
+  padding-top: 0;
+}
 
-.sidebar-menu-links{
+.sidebar-menu-links a:hover{
+  color: white;
+  background-color: rgb(36, 43, 58);
+  border-left: 2px solid lightblue;
+}
+
+/*.normalize-fa{
+  font-size: 1em;
+  color: lightgrey;
+  padding: 0;
+  border
+}*/
+
+.checkbox{
 
 }
 
-/*---------- Footer ----------------*/
-footer{
-
+.yellow-BG{
+  background-color: yellow;
 }
 
+.red-BG{
+  color: red;
+}
+
+.light-blue-BG{
+  color: lightblue;
+}
+.green-BG{
+  color: green;
+}
 /*---------- Media Queries ---------*/
 
 /*---- Large Tablet/Small Comp -----*/
