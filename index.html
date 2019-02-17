@@ -4,60 +4,64 @@
   <meta charset="UTF-8">
   <title>ideabox</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body>
-<header>
-  <img src="" alt="Click here to collapse sidebar" class="hamburger-menu">
-  <input type="search" name=""  class="search-bar">
-  <a href=""><img src="" alt="add new customer" class="top-svg"></a>
-  <a href=""><img src="" alt="calendar" class="top-svg"></a>
-  <a href=""><img src="" alt="menu" class="top-svg"></a>
-</header>
+<body class="grid-container">
 <aside>
-  <img src="" alt="Headshot of User" class ="round-img">
-  <h3>Name here</p> 
+  <img src="./images/user-photo.jpg" alt="Headshot of User" class ="round-img">
+  <h3 class="user-name">Patrick Goulding <i class="fas fa-angle-down"></i></h3> 
   <hr>
   <h3 class="sidebar-menu-categories">Main</h3>
   <div class="sidebar-menu-links">
-    <a href="" >Home</a>
-    <a href="">Jobs</a>
-    <a href="">Resumes</a>
-    <a href="">Tasks</a> 
-    <a href="">Calendar</a>
+    <a href=""><i class="fas fa-home">  Home</i></a>
+    <a href=""><i class="fas fa-briefcase"> Jobs</i></a>
+    <a href=""><i class="fas fa-file-alt">  Resumes</i></a>
+    <a href=""><i class="fas fa-clipboard-list">  Tasks</i></a> 
+    <a href=""><i class="fas fa-calendar-alt normalize-fa">  Calendar</i></a>
   </div>
   <hr>  
   <h3 class="sidebar-menu-categories">Admin</h3>
   <div class="sidebar-menu-links">
-    <a href="">users</a>
-    <a href="">locations</a>
-    <a href="">workflows</a>
-    <a href="">Job Boards</a>
-    <a href="">Social</a>
+    <a href=""><i class="fas fa-user-friends">  users</i></a>
+    <a href=""><i class="fas fa-map-marker-alt">  locations</i></a>
+    <a href=""><i class="fas fa-network-wired"> workflows</i></a>
+    <a href=""><i class="fas fa-newspaper"> Job Boards</i></a>
+    <a href=""><i class="fas fa-share-alt"> Social</i></a>
   </div>
   <hr>
   <h3 class="sidebar-menu-categories">Categories</h3>
   <div>
     <input type="checkbox" name="job-category" id="Admin" class="checkbox yellow-BG">
-      <label for="Admin">Administrative</label>
+      <label for="Admin" class="sidebar-label-forms">Administrative</label>
     <br>
     <input type="checkbox" name="job-category" id="design" class="checkbox light-blue-BG">
-      <label for="design">Design</label>
+      <label for="design" class="sidebar-label-forms">Design</label>
     <br>
     <input type="checkbox" name="job-category" id="exec" class="checkbox red-BG">
-      <label for="exec">Executive</label>
+      <label for="exec" class="sidebar-label-forms">Executive</label>
     <br>
     <input type="checkbox" name="job-category" id="HR" class="checkbox green-BG">
-      <label for="HR">Human Reources</label>
+      <label for="HR" class="sidebar-label-forms">Human Reources</label>
     <br>
   </div>
 </aside>
+<header>
+  <i class="fas fa-bars"></i>
+  <input type="search" name=""  class="search-bar">
+  <a href=""><i class="fas fa-user-plus"></i></a>
+  <a href=""><i class="fas fa-calendar-alt"></i></a>
+  <a href=""><i class="fas fa-th"></i></a>
+</header>
+<section>
+  <button class="fb-button social-share"><i class="fab fa-facebook-f"></i> Post to Facebook</button>
+  <button class="twitter-button social-share"><i class="fab fa-twitter"></i> Tweet this Job</button>
+  <button class="linkedin-button social-share"><i class="fab fa-linkedin-in"></i> Post to LinkedIn</button>
+</section>
 <article>
   
 </article>
-<section>
-  
-</section>
+
 </body>
 </html>
