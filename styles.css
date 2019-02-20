@@ -8,23 +8,30 @@ body{
   font-family: verdana;
   height: 100vh;
 }
+
 .grid-container{
   display: grid;
-  grid-template-columns: 200px 2fr 200px;
-/*  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+  grid-template-columns: 200px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 200px 400px 400px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px; 
 }
 
 a{
   text-decoration: none;
   font-family: verdana;
 }
+
 .fas{
   padding-left: 3px;
+  font-family: verdana;
 }
+
 h3{
   font-size: .8em;
   color: dimgray;
 }
+
 hr{
   border-color: darkslategray;
 }
@@ -33,6 +40,10 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  grid-column: 2/6;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+/*  background-color: #ffffff;*/
 }
 
 .fa-user-plus,
@@ -42,13 +53,16 @@ header{
   font-size: 1.8em;
   color: grey;
   padding: 10px;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 }
 
 .search-bar{
   height: 40px;
   flex-grow: 3;
   margin-top: 5px;
-
+  outline: none;
+  border-color: white;
 }
 
 .top-svg{
@@ -57,41 +71,114 @@ header{
 
 /*---------- Aritcle ---------------*/
 article{
+  grid-column: 2/6;
+  display: flex;
 
 }
 
-.container{
-  border: 1px dashed;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+.job-title{
+/*  margin-left: 20px;*/
 }
+
 /*---------- Section ---------------*/
+section{
+  grid-row: 3;
+  grid-column: 2/6;
+}
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.graph-numbers {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.4em;
+  text-anchor: middle;
+}
+
+.graph-title{
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.2em;
+  text-anchor: middle;
+}
+
 .social-share{
   display: flex;
   height: 40px;
   width: 180px;
   justify-content: space-between;
   align-items: baseline;
-
+  margin: 0 auto;
+  outline: none;
 }
 
 .fb-button{
+  background-color: 
 
 }
 
 .twitter-button{
+  background-color: 
 
 }
 
 .linkedin-button{
+  background-color: 
 
 }
 
 /*---------- Aside -----------------*/
-aside{
+aside.left-column{
   background-color: rgb(40, 48, 64);
   color: lightgrey;
   padding: 15px;
+  height: 100%;
+  grid-row: 1/-1;
 }
 
 .round-img{
@@ -108,6 +195,7 @@ aside{
 .sidebar-menu-categories{
 
 }
+
 .normalize-fa,
 .sidebar-menu-links a{
   display: flex;
@@ -120,6 +208,7 @@ aside{
   font-size: 1em;
   padding-left: 0;
   padding-top: 0;
+/*  border: none;*/
 }
 
 .sidebar-menu-links a:hover{
@@ -128,12 +217,6 @@ aside{
   border-left: 2px solid lightblue;
 }
 
-/*.normalize-fa{
-  font-size: 1em;
-  color: lightgrey;
-  padding: 0;
-  border
-}*/
 
 .checkbox{
 
@@ -152,6 +235,50 @@ aside{
 }
 .green-BG{
   color: green;
+}
+
+aside.right-column{
+  grid-column:5;
+  grid-row:4/-1;
+  background-color: rgb(233,239,244);
+
+}
+/*---------- Table -----------------*/
+
+table{
+  outline: none;
+  grid-column:2/5; 
+  grid-row: 4;
+  background-color: #fff;
+
+/*  padding: 40px;*/
+}
+
+th{
+  background: slategray;
+  color: white;
+  text-align: left
+/*  word-break: keep-all;*/
+}
+
+td{
+  border-bottom: 1px solid lightgray;
+}
+
+.job-description{
+  
+}
+
+.table-template{
+  font-weight: bold;
+  width:30%;
+}
+.table-modular{
+  width: 70%;
+}
+.hiring-img{
+  width: 30px;
+  border-radius: 50%;
 }
 /*---------- Media Queries ---------*/
 

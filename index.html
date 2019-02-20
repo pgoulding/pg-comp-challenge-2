@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ideabox</title>
+  <title>Static Comp 2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body class="grid-container">
-<aside>
+<aside class="left-column">
   <img src="./images/user-photo.jpg" alt="Headshot of User" class ="round-img">
-  <h3 class="user-name">Patrick Goulding <i class="fas fa-angle-down"></i></h3> 
+  <a href=""><h3 class="user-name">Patrick Goulding <i class="fas fa-angle-down"></i></h3></a>
   <hr>
   <h3 class="sidebar-menu-categories">Main</h3>
   <div class="sidebar-menu-links">
@@ -19,7 +19,7 @@
     <a href=""><i class="fas fa-briefcase"> Jobs</i></a>
     <a href=""><i class="fas fa-file-alt">  Resumes</i></a>
     <a href=""><i class="fas fa-clipboard-list">  Tasks</i></a> 
-    <a href=""><i class="fas fa-calendar-alt normalize-fa">  Calendar</i></a>
+    <a href=""><i class="fas fa-calendar-day"> Calendar</i></a>
   </div>
   <hr>  
   <h3 class="sidebar-menu-categories">Admin</h3>
@@ -32,7 +32,7 @@
   </div>
   <hr>
   <h3 class="sidebar-menu-categories">Categories</h3>
-  <div>
+  <form>
     <input type="checkbox" name="job-category" id="Admin" class="checkbox yellow-BG">
       <label for="Admin" class="sidebar-label-forms">Administrative</label>
     <br>
@@ -45,23 +45,143 @@
     <input type="checkbox" name="job-category" id="HR" class="checkbox green-BG">
       <label for="HR" class="sidebar-label-forms">Human Reources</label>
     <br>
-  </div>
+  </form>
 </aside>
 <header>
   <i class="fas fa-bars"></i>
-  <input type="search" name=""  class="search-bar">
+  <input type="search" placeholder="Search" class="search-bar">
   <a href=""><i class="fas fa-user-plus"></i></a>
   <a href=""><i class="fas fa-calendar-alt"></i></a>
   <a href=""><i class="fas fa-th"></i></a>
 </header>
-<section>
-  <button class="fb-button social-share"><i class="fab fa-facebook-f"></i> Post to Facebook</button>
-  <button class="twitter-button social-share"><i class="fab fa-twitter"></i> Tweet this Job</button>
-  <button class="linkedin-button social-share"><i class="fab fa-linkedin-in"></i> Post to LinkedIn</button>
-</section>
-<article>
-  
-</article>
+<aside class="right-column">
+  <button class="fb-button social-share"><i class="fab fa-facebook-f"> 
+    </i> Post to Facebook</button>
+  <button class="twitter-button social-share"><i class="fab fa-twitter">
+    </i> Tweet this Job</button>
+  <button class="linkedin-button social-share"><i class="fab fa-linkedin-in"> 
+    </i> Post to LinkedIn</button>
+  <h4><i class="fas fa-globe-americas"></i> Link to This Job</h4>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum magni atque magnam nobis illo esse totam optio pariatur, qui quaerat?</p>
+    <input type="text" value="www.salfjdaflk.com/asfknknsdf/safijsdf.html"><button>Copy</button>
+  <hr>
+  <h4><i class="fas fa-camera-retro"></i> Use the button widget</h4>
+    <p>This widget embeds the buttons for sharing the job for 
+    submitting on your website.</p>
+    <input type="text" value=" script type= 'text/javascript' ">
+  <hr>
+  <h4><i class="fab fa-telegram-plane"></i> Upload Resumes by Email</h4>
+    <p>You can automatically upload multiple resumes to this 
+    job by emailing the address below</p>
+    <input type="text" value="patrickgoulding@example.com">
+</aside>
+<article class="job-title">
+<h2>Customer Service Representative</h2>
+<p class="subtitle">San Francisco, CA - <a href=# class="preview-link">Preview This Post</a></p>
 
+<div>
+  <button>Open</button>
+  <button>bookmark</button>
+  <button>edit</button>
+  <button>delete</button>
+</div>
+</article>
+<section>
+  <div class="flex-wrapper">
+  <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="circular-chart orange">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="30, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="18.35" class="graph-numbers">3154</text>
+      <text x="18" y="23.35" class="graph-title">Applicants</text>
+    </svg>
+  </div>
+  
+  <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="circular-chart green">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="60, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="18.35" class="graph-numbers">1546</text>
+      <text x="18" y="23.35" class="graph-title">Interviewers</text>
+    </svg>
+  </div>
+
+  <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="circular-chart blue">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="90, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="18.35" class="graph-numbers">912</text>
+      <text x="18" y="23.35" class="graph-title">Forwards</text>
+    </svg>
+  </div>
+<button>Line Graph Placeholder</button>
+</div>
+    <button>Totals - out of <span>3,323</span> views</button>
+    <button>APPLICANTS/DAY</button>
+</section>
+  <table class="job-description">
+    <thead>
+      <tr>
+        <th>Job Decription</th>
+        <th><button>EDIT</button><th>
+      </tr>
+    </thead>
+    <tr>
+      <td class="table-template">Position Title</td>
+      <td class="table-modular">Customer Service Represnetative</td>
+    </tr>
+    <tr>
+      <td class="table-template">Location</td>
+      <td class="table-modular">San Francisco</td>
+    </tr>
+    <tr>
+      <td class="table-template">Employment Type</td>
+      <td class="table-modular">Full Time</td>
+    </tr>
+    <tr>
+      <td class="table-template">Experience</td>
+      <td class="table-modular">Mid Level</td>
+    </tr>
+    <tr>
+      <td class="table-template">Status</td>
+      <td class="table-modular">Open</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos mollitia magni nesciunt eligendi eius vitae, dolorem praesentium similique eveniet quam velit labore dolor provident eum natus pariatur libero fugiat, voluptates.</td>
+    </tr>
+    <tr>
+      <td class="table-template">Hiring Lead</td>
+      <td><img src="" class="hiring-img"> Tom Terry</td>
+    </tr>
+  </table>
+</article>
 </body>
 </html>
